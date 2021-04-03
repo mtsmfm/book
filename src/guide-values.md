@@ -50,7 +50,7 @@ let i: i32 = rng.gen();
 let x: f64 = rng.gen();
 
 // simulate rolling a die:
-let roll = rng.gen_range(1, 7);
+let roll = rng.gen_range(1..7);
 ```
 
 Additionally, the [`random`] function is a short-cut to [`Rng::gen`] on the [`thread_rng`]:
